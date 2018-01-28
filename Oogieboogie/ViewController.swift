@@ -9,16 +9,16 @@
 import UIKit
 import TestFramework
 
-class ViewController: UIViewController {
+open class ViewController: UIViewController {
 
-    override func viewDidLoad() {
+    override open func viewDidLoad() {
         super.viewDidLoad()
         let vc = TestVC()
         self.present(vc, animated: true, completion: nil)
         // Do any additional setup after loading the view, typically from a nib.
     }
 
-    override func didReceiveMemoryWarning() {
+    override open func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
