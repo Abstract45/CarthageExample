@@ -14,6 +14,16 @@
 		E8787510201DA5630051944A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E878750E201DA5630051944A /* LaunchScreen.storyboard */; };
 		E878751B201DA5640051944A /* OogieboogieTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E878751A201DA5640051944A /* OogieboogieTests.swift */; };
 		E8787526201DA5640051944A /* OogieboogieUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8787525201DA5640051944A /* OogieboogieUITests.swift */; };
+		E8787536201DA5760051944A /* TestFramework.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = E8787533201DA5700051944A /* TestFramework.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		E8787546201DA5B20051944A /* CarthageFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E878753D201DA5B20051944A /* CarthageFramework.framework */; };
+		E878754D201DA5B20051944A /* CarthageFrameworkTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E878754C201DA5B20051944A /* CarthageFrameworkTests.swift */; };
+		E878754F201DA5B20051944A /* CarthageFramework.h in Headers */ = {isa = PBXBuildFile; fileRef = E878753F201DA5B20051944A /* CarthageFramework.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E8787552201DA5B20051944A /* CarthageFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E878753D201DA5B20051944A /* CarthageFramework.framework */; };
+		E8787553201DA5B20051944A /* CarthageFramework.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = E878753D201DA5B20051944A /* CarthageFramework.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		E878755A201DA5BD0051944A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8787507201DA5630051944A /* ViewController.swift */; };
+		E878755E201DA7DF0051944A /* TestFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E8787533201DA5700051944A /* TestFramework.framework */; };
+		E878755F201DA8010051944A /* TestFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E8787533201DA5700051944A /* TestFramework.framework */; };
+		E8787565201DAC9C0051944A /* TestFramework.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = E8787533201DA5700051944A /* TestFramework.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -31,7 +41,53 @@
 			remoteGlobalIDString = E8787501201DA5630051944A;
 			remoteInfo = Oogieboogie;
 		};
+		E8787547201DA5B20051944A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E87874FA201DA5630051944A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E878753C201DA5B20051944A;
+			remoteInfo = CarthageFramework;
+		};
+		E8787549201DA5B20051944A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E87874FA201DA5630051944A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E8787501201DA5630051944A;
+			remoteInfo = Oogieboogie;
+		};
+		E8787550201DA5B20051944A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E87874FA201DA5630051944A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E878753C201DA5B20051944A;
+			remoteInfo = CarthageFramework;
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		E8787537201DA5760051944A /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				E8787553201DA5B20051944A /* CarthageFramework.framework in Embed Frameworks */,
+				E8787536201DA5760051944A /* TestFramework.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E8787564201DAC960051944A /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				E8787565201DAC9C0051944A /* TestFramework.framework in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		E8787502201DA5630051944A /* Oogieboogie.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Oogieboogie.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -47,6 +103,13 @@
 		E8787521201DA5640051944A /* OogieboogieUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OogieboogieUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E8787525201DA5640051944A /* OogieboogieUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OogieboogieUITests.swift; sourceTree = "<group>"; };
 		E8787527201DA5640051944A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E8787533201DA5700051944A /* TestFramework.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = TestFramework.framework; sourceTree = "<group>"; };
+		E878753D201DA5B20051944A /* CarthageFramework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CarthageFramework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E878753F201DA5B20051944A /* CarthageFramework.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CarthageFramework.h; sourceTree = "<group>"; };
+		E8787540201DA5B20051944A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E8787545201DA5B20051944A /* CarthageFrameworkTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CarthageFrameworkTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E878754C201DA5B20051944A /* CarthageFrameworkTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarthageFrameworkTests.swift; sourceTree = "<group>"; };
+		E878754E201DA5B20051944A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +117,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E878755F201DA8010051944A /* TestFramework.framework in Frameworks */,
+				E8787552201DA5B20051944A /* CarthageFramework.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -71,16 +136,36 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		E8787539201DA5B20051944A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E878755E201DA7DF0051944A /* TestFramework.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E8787542201DA5B20051944A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E8787546201DA5B20051944A /* CarthageFramework.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
 		E87874F9201DA5630051944A = {
 			isa = PBXGroup;
 			children = (
+				E8787533201DA5700051944A /* TestFramework.framework */,
 				E8787504201DA5630051944A /* Oogieboogie */,
 				E8787519201DA5640051944A /* OogieboogieTests */,
 				E8787524201DA5640051944A /* OogieboogieUITests */,
+				E878753E201DA5B20051944A /* CarthageFramework */,
+				E878754B201DA5B20051944A /* CarthageFrameworkTests */,
 				E8787503201DA5630051944A /* Products */,
+				E878755B201DA5C70051944A /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -90,6 +175,8 @@
 				E8787502201DA5630051944A /* Oogieboogie.app */,
 				E8787516201DA5640051944A /* OogieboogieTests.xctest */,
 				E8787521201DA5640051944A /* OogieboogieUITests.xctest */,
+				E878753D201DA5B20051944A /* CarthageFramework.framework */,
+				E8787545201DA5B20051944A /* CarthageFrameworkTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -125,7 +212,43 @@
 			path = OogieboogieUITests;
 			sourceTree = "<group>";
 		};
+		E878753E201DA5B20051944A /* CarthageFramework */ = {
+			isa = PBXGroup;
+			children = (
+				E878753F201DA5B20051944A /* CarthageFramework.h */,
+				E8787540201DA5B20051944A /* Info.plist */,
+			);
+			path = CarthageFramework;
+			sourceTree = "<group>";
+		};
+		E878754B201DA5B20051944A /* CarthageFrameworkTests */ = {
+			isa = PBXGroup;
+			children = (
+				E878754C201DA5B20051944A /* CarthageFrameworkTests.swift */,
+				E878754E201DA5B20051944A /* Info.plist */,
+			);
+			path = CarthageFrameworkTests;
+			sourceTree = "<group>";
+		};
+		E878755B201DA5C70051944A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		E878753A201DA5B20051944A /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E878754F201DA5B20051944A /* CarthageFramework.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
 		E8787501201DA5630051944A /* Oogieboogie */ = {
@@ -135,10 +258,13 @@
 				E87874FE201DA5630051944A /* Sources */,
 				E87874FF201DA5630051944A /* Frameworks */,
 				E8787500201DA5630051944A /* Resources */,
+				E8787537201DA5760051944A /* Embed Frameworks */,
+				E8787562201DABAD0051944A /* ShellScript */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				E8787551201DA5B20051944A /* PBXTargetDependency */,
 			);
 			name = Oogieboogie;
 			productName = Oogieboogie;
@@ -181,6 +307,45 @@
 			productReference = E8787521201DA5640051944A /* OogieboogieUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
+		E878753C201DA5B20051944A /* CarthageFramework */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E8787554201DA5B30051944A /* Build configuration list for PBXNativeTarget "CarthageFramework" */;
+			buildPhases = (
+				E8787538201DA5B20051944A /* Sources */,
+				E8787539201DA5B20051944A /* Frameworks */,
+				E878753A201DA5B20051944A /* Headers */,
+				E878753B201DA5B20051944A /* Resources */,
+				E8787563201DABCD0051944A /* ShellScript */,
+				E8787564201DAC960051944A /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CarthageFramework;
+			productName = CarthageFramework;
+			productReference = E878753D201DA5B20051944A /* CarthageFramework.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		E8787544201DA5B20051944A /* CarthageFrameworkTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E8787557201DA5B30051944A /* Build configuration list for PBXNativeTarget "CarthageFrameworkTests" */;
+			buildPhases = (
+				E8787541201DA5B20051944A /* Sources */,
+				E8787542201DA5B20051944A /* Frameworks */,
+				E8787543201DA5B20051944A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E8787548201DA5B20051944A /* PBXTargetDependency */,
+				E878754A201DA5B20051944A /* PBXTargetDependency */,
+			);
+			name = CarthageFrameworkTests;
+			productName = CarthageFrameworkTests;
+			productReference = E8787545201DA5B20051944A /* CarthageFrameworkTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -205,6 +370,15 @@
 						ProvisioningStyle = Automatic;
 						TestTargetID = E8787501201DA5630051944A;
 					};
+					E878753C201DA5B20051944A = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+					E8787544201DA5B20051944A = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = E8787501201DA5630051944A;
+					};
 				};
 			};
 			buildConfigurationList = E87874FD201DA5630051944A /* Build configuration list for PBXProject "Oogieboogie" */;
@@ -223,6 +397,8 @@
 				E8787501201DA5630051944A /* Oogieboogie */,
 				E8787515201DA5640051944A /* OogieboogieTests */,
 				E8787520201DA5640051944A /* OogieboogieUITests */,
+				E878753C201DA5B20051944A /* CarthageFramework */,
+				E8787544201DA5B20051944A /* CarthageFrameworkTests */,
 			);
 		};
 /* End PBXProject section */
@@ -252,7 +428,50 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		E878753B201DA5B20051944A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E8787543201DA5B20051944A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		E8787562201DABAD0051944A /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/usr/local/bin/carthage copy-frameworks";
+		};
+		E8787563201DABCD0051944A /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/usr/local/bin/carthage copy-frameworks";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		E87874FE201DA5630051944A /* Sources */ = {
@@ -280,6 +499,22 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		E8787538201DA5B20051944A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E878755A201DA5BD0051944A /* ViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E8787541201DA5B20051944A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E878754D201DA5B20051944A /* CarthageFrameworkTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -292,6 +527,21 @@
 			isa = PBXTargetDependency;
 			target = E8787501201DA5630051944A /* Oogieboogie */;
 			targetProxy = E8787522201DA5640051944A /* PBXContainerItemProxy */;
+		};
+		E8787548201DA5B20051944A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E878753C201DA5B20051944A /* CarthageFramework */;
+			targetProxy = E8787547201DA5B20051944A /* PBXContainerItemProxy */;
+		};
+		E878754A201DA5B20051944A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E8787501201DA5630051944A /* Oogieboogie */;
+			targetProxy = E8787549201DA5B20051944A /* PBXContainerItemProxy */;
+		};
+		E8787551201DA5B20051944A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E878753C201DA5B20051944A /* CarthageFramework */;
+			targetProxy = E8787550201DA5B20051944A /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -425,9 +675,14 @@
 		E878752B201DA5640051944A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = W36NVXCL48;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = Oogieboogie/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = solutions.abstract.Oogieboogie;
@@ -440,9 +695,14 @@
 		E878752C201DA5640051944A /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = W36NVXCL48;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = Oogieboogie/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = solutions.abstract.Oogieboogie;
@@ -518,6 +778,94 @@
 			};
 			name = Release;
 		};
+		E8787555201DA5B30051944A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = W36NVXCL48;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = CarthageFramework/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = solutions.abstract.CarthageFramework;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		E8787556201DA5B30051944A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = W36NVXCL48;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = CarthageFramework/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = solutions.abstract.CarthageFramework;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		E8787558201DA5B30051944A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = W36NVXCL48;
+				INFOPLIST_FILE = CarthageFrameworkTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = solutions.abstract.CarthageFrameworkTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Oogieboogie.app/Oogieboogie";
+			};
+			name = Debug;
+		};
+		E8787559201DA5B30051944A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = W36NVXCL48;
+				INFOPLIST_FILE = CarthageFrameworkTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = solutions.abstract.CarthageFrameworkTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Oogieboogie.app/Oogieboogie";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -553,6 +901,24 @@
 			buildConfigurations = (
 				E8787531201DA5640051944A /* Debug */,
 				E8787532201DA5640051944A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E8787554201DA5B30051944A /* Build configuration list for PBXNativeTarget "CarthageFramework" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E8787555201DA5B30051944A /* Debug */,
+				E8787556201DA5B30051944A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E8787557201DA5B30051944A /* Build configuration list for PBXNativeTarget "CarthageFrameworkTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E8787558201DA5B30051944A /* Debug */,
+				E8787559201DA5B30051944A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
